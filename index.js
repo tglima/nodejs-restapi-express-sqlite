@@ -5,7 +5,7 @@ const homeRoutes = require('./app/routes/home.routes');
 
 app.use(bodyParser.json());
 
-app.use('/', homeRoutes);
+app.use('/api/v1', homeRoutes);
 
 app.listen(4200, () => {
     console.log('Servidor rodando na porta: 4200');
