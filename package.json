@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-restapi-express-sqlite",
+  "version": "1.0.0",
+  "description": "API Rest desenvolvida com NodeJs, Express e SQLite",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "author": "Thiago Lima",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.0.11"
+  }
+}
