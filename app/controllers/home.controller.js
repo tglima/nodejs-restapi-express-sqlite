@@ -1,6 +1,6 @@
 exports.getHome = (req, res, next) => {
     return res.status(200).send({
-        success: 1,
+        success: true,
         message: 'OK',
       });
   };
