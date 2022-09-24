@@ -20,7 +20,8 @@ exports.checkAuth = (data, callback) => {
         const token = {};
         token.acess_token = jwt.sign({id}, tokenConfig.secret, {expiresIn: (60 * tokenConfig.minutesExpiration) });
         token.token_type = tokenConfig.tokenType;
-        token.dateTimeExpiration = new Date(+new Date() + (60000*tokenConfig.minutesExpiration));
+        token.expires_in = 60 * tokenConfig.minutesExpiration;
+        token.date_time_expiration = new Date(+new Date() + (60*tokenConfig.minutesExpiration));
         resultDTO = {statusCode: 200, message: "Sucess", success: true, token: token};
       }
       return callback(resultDTO);
