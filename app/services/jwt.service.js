@@ -10,8 +10,8 @@ exports.verifyJWT = (req, res, next) => {
 
     jwt.verify(bearerHeader, tokenConfig.secret, function(err, decoded) {
         if (err){
-            return res.status(401).json({ success: false, message: 'Invalid credentials' });
-        }         
+            return res.status(401).json({ success: false, message: 'Invalid token' });
+        }
 
         req.userId = decoded.id;
         next();
