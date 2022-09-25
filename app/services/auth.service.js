@@ -1,5 +1,5 @@
-const db  = require('../../config/database.config');
-const tokenConfig = require('../../config/token.config');
+const db  = require('../config/database.config');
+const tokenConfig = require('../config/token.config');
 const jwt = require('jsonwebtoken');
 
 exports.checkAuth = (data, callback) => {
