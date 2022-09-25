@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const tokenConfig = require('../../config/token.config');
+const tokenConfig = require('../config/token.config');
 
 exports.verifyJWT = (req, res, next) => {
     const bearerHeader = req.headers['authorization'].replace('Bearer ', '');

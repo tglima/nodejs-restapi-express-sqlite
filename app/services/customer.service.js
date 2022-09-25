@@ -1,4 +1,4 @@
-const db  = require('../../config/database.config');
+const db  = require('../config/database.config');
 
 exports.findCustomerById = (data, callback) => {
   const query =
